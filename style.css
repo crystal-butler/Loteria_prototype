@@ -1,0 +1,426 @@
+/* Reset CSS
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********************************************************/
+
+/*** Main Layout:index + 'play' nav for all pages ***/
+
+html
+{
+	font-family: 'Lato', sans-serif;
+}
+
+
+body
+{
+	font-family: 'Lato', sans-serif;
+	background:#F2F0D8;
+	background-image:url(images/bg_texture.png);
+	width:90%;
+	margin-left:5%;
+	font-size:18px;
+}
+
+strong {
+	font-size:1.1em;
+	font-weight:700;
+}
+
+header {
+	margin:auto;
+	height:auto;
+}
+
+header img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+nav {
+	padding-right:3.5%;
+	display:block;
+	text-align:center;
+}
+
+nav ul li {
+	font-family: 'Lato', sans-serif;
+	display:inline;
+	font-size:1.4em;
+}
+
+nav ul li a {
+	text-decoration:none;
+	color:#F2C36B;
+	padding:.2em .5% .2em .5%;
+	text-transform:uppercase;
+	text-shadow: 1px 1px 1px rgba(189,169,93,.9); /*h-shadow v-shadow blur color;*/
+}
+
+nav ul li a:hover {
+	color:#BDA35D;
+	-webkit-transition:color 0.2s linear; /*other options; eases transition*/
+	-moz-transition:color 0.2s linear;
+	transition:color 0.2s linear;
+}
+
+nav img
+{
+	margin:auto;
+}
+
+#navPlay {
+	padding-left:3.5%;
+	position:relative;
+	z-index:10;
+	top:-1em;
+}
+
+#navPlay img:hover {
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	transform:scale(1.2);
+}
+	
+#navHistory {
+	color:#000;
+	padding:.2em .5% .2em .5%;
+	text-transform:uppercase;
+	text-shadow: 1px 1px 1px rgba(189,169,93,.9); /*h-shadow v-shadow blur color;*/
+}
+
+#navHow
+{
+	color:#000;
+	padding:.2em .5% .2em .5%;
+	text-transform:uppercase;
+	text-shadow: 1px 1px 1px rgba(189,169,93,.9); /*h-shadow v-shadow blur color;*/
+}
+
+#navPlayers
+{
+	color:#000;
+	padding:.2em .5% .2em .5%;
+	text-transform:uppercase;
+	text-shadow: 1px 1px 1px rgba(189,169,93,.9); /*h-shadow v-shadow blur color;*/
+}
+
+#content
+{
+	width:100%;
+	height:33em;
+	padding-right:10%;
+	overflow:hidden;
+}
+
+#cards
+{
+	width:100%;
+	position:relative;
+	top:-3em;
+	z-index:-3;
+}
+
+#cards img {
+	display:block;
+	margin:auto;
+	padding-right:5%;
+}
+
+#devil
+{
+	width:40%;
+	position:relative;
+	z-index:10;
+	top:-22.25em;
+	right:-71%;
+	padding-right:7%;
+}
+
+#devil img {
+	display:block;
+	margin:auto;
+}
+
+
+#devil img:hover {
+	-webkit-transform:rotate(10deg) scale(1.2) translate(0px,-2em);
+	-moz-transform:rotate(10deg) scale(1.2) translate(0px,-2em);
+	-o-transform:rotate(10deg) scale(1.2) translate(0px,-2em);
+	transform:rotate(10deg) scale(1.2) translate(0px,-2em);
+}
+
+#play
+{
+	width:100%;
+	position:relative;
+	z-index:1;
+	top:-43em;
+}
+
+#play img {
+	display:block;
+	margin:auto;
+	padding-right:5%;
+}
+
+
+#home {
+	width:50%;
+	height:4.8em;
+	text-align:center;
+	padding-left:27.5%;
+	padding-right:22.5%;
+	position:relative;
+	top:-44em;
+}
+
+#home p {
+	font-size:.85em;
+	color:#D91E2E;
+	line-height:1.15em;
+	letter-spacing:1px;
+	display:block;
+	padding-bottom:1em;
+}
+
+#line
+{
+	width:75%;
+	margin:auto;
+	height:.5em;
+	overflow:hidden;
+}
+
+#line img {
+	display:block;
+	margin:auto;
+	position:relative;
+	
+}
+	
+#info {
+	width:65%;
+	margin-left:12%;
+	margin-right:23%;
+	overflow:hidden;
+	font-size:.8em;
+	height:7em;
+	text-align:center;
+}
+
+#info a {
+	text-align:center;
+	text-decoration:none;
+	color:#000000
+}
+
+footer figure {
+	float:left;
+}
+
+/*********************************************************/
+
+/*** Additional Layout: Play ***/
+
+#content2
+{
+	padding-right:10%;
+	width:100%;
+	height:24em;
+	
+}
+
+#tabla {
+	position:relative;
+	z-index:-1;
+	top:-34em;
+	right:-55%;
+	display:block;
+	padding-right:5%;
+}
+
+#deckPlay {
+	position:relative;
+	z-index:-4;
+	top:-4em;
+	right:25%;
+	display:block;
+	font-size:1.4em;
+	text-transform:uppercase;
+	text-align:center;
+	color:#D91E2E;
+	padding-left:5%;
+}
+
+#deckPlay img {
+	margin-bottom:1em;
+}
+	
+/*********************************************************/
+
+/*** Additional Layout: History ***/
+
+#history {
+	height:24em;
+	position:relative;
+	display:block;
+	width:55%;
+	padding-left:6%;
+	line-height:1em;
+	letter-spacing:1px;
+}
+
+#history ul li {
+	font-size:.85em;
+	text-transform:uppercase;
+	color:#D91E2E;
+}
+
+#antique {
+	position:relative;
+	top:-34em;
+	right:-61%;
+	display:block;
+	width:30%;
+}
+
+
+/*********************************************************/
+
+/*** Additional Layout: How to Play ***/
+
+#howPlay {
+	position:relative;
+	top:-7em;
+	display:block;
+	width:30%;
+	padding-left:6%;
+}
+	
+#how {
+	height:24em;
+	position:relative;
+	top:-30em;
+	right:-40%;
+	padding-left:10%;
+	display:block;
+	width:45%;
+	line-height:1em;
+	letter-spacing:1px;
+}
+
+#how ul li {
+	font-size:.85em;
+	text-transform:uppercase;
+	color:#D91E2E;
+}
+
+
+/*********************************************************/
+
+/*** Additional Layout: Players ***/
+
+#playerMe {
+	position:relative;
+	top:-4.7em;
+	z-index:-1;
+	padding-left:2.5%;
+	padding-right:5%;
+	width:35%;
+}
+
+#playerMe img {
+	display:block;
+	margin:auto;
+}
+
+#divider {
+	position:relative;
+	top:-35em;
+	right:-36%;
+	z-index:-2;
+	padding-left:1%;
+	padding-right:1%;
+	width:1%;
+}
+
+#divider img {
+	display:block;
+	margin:auto;
+}
+
+
+#playerOther {
+	display:block;
+	line-height:1em;
+	letter-spacing:1px;
+	position:relative;
+	top:-60em;
+	left:42%;
+	z-index:-3;
+	width:60%;
+}
+
+#playerOther img {
+	padding-left:4%;
+	margin:auto;
+}
+	
+/********************************************************/
+
+/* Media Query*/
+@media screen and (max-width:768px) {
+	body {
+		width:62.745098%; /*640 px/1020px*/
+	}
+	ul li a img {
+		width:100%;
+	}
+}
